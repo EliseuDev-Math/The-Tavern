@@ -9,6 +9,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import WhatsappButton from './components/WhatsappButton'
 import Cart from './components/Cart'
+import supabase from './lib/supabase'
 
 interface MenuItem {
   id: number
@@ -29,14 +30,17 @@ function App() {
   const [isCartOpen, setIsCartOpen] = useState(false)
   const [loading, setLoading] = useState(true)
 
-  // Fetch menu from API
+  // Busca o cardápio direto do Supabase (sem passar pela /api/menu)
   const fetchMenu = async () => {
     try {
-      const res = await fetch('/api/menu')
-      const data = await res.json()
-      setMenuItems(data)
+      const { data, error } = await supabase
+        .from('menu_items')
+        .select('*')
+        .order('id', { ascending: true })
+      if (error) throw error
+      setMenuItems(data ?? [])
     } catch (err) {
-      console.error('Error fetching menu:', err)
+      console.error('Erro ao buscar cardápio:', err)
     } finally {
       setLoading(false)
     }
