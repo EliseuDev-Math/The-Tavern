@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Send } from 'lucide-react'
+import supabase from '../lib/supabase'
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -17,20 +18,22 @@ const Contact = () => {
     setIsSubmitting(true)
 
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      })
+      const { error } = await supabase
+        .from('contacts')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+        })
 
-      if (res.ok) {
-        setSubmitStatus('success')
-        setFormData({ name: '', email: '', phone: '', message: '' })
-        setTimeout(() => setSubmitStatus('idle'), 3000)
-      } else {
-        setSubmitStatus('error')
-      }
+      if (error) throw error
+
+      setSubmitStatus('success')
+      setFormData({ name: '', email: '', phone: '', message: '' })
+      setTimeout(() => setSubmitStatus('idle'), 3000)
     } catch (err) {
+      console.error('Erro ao enviar contato:', err)
       setSubmitStatus('error')
     } finally {
       setIsSubmitting(false)
