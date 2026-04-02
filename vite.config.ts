@@ -10,5 +10,10 @@ export default defineConfig(async () => {
     const m = await import('./.vite-source-tags.js');
     plugins.push(m.sourceTags());
   } catch {}
-  return { plugins };
+  return {
+    plugins,
+    // ⚠️ Troque 'The-Tavern' pelo nome exato do repositório no GitHub
+    // Se o domínio for seuusuario.github.io (sem subpasta), use: base: '/'
+    base: '/The-Tavern/',
+  };
 })
