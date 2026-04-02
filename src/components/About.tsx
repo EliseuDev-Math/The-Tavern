@@ -17,7 +17,7 @@ const About = () => {
 
           <div className="space-y-6 text-lg text-white/80 max-w-lg">
             <p>
-              Fundado em 2018, The Tavern nasceu da paixão por um bom churrasco e pela 
+              Fundado em 2026, The Tavern nasceu da paixão por um bom churrasco e pela 
               vontade de levar o melhor espetinho de Cuiabá para a sua mesa.
             </p>
             <p>
