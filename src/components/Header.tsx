@@ -33,12 +33,14 @@ const Header = ({ cartCount, onCartClick }: HeaderProps) => {
       <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 bg-gradient-to-br from-red-600 to-orange-500 rounded-full flex items-center justify-center">
-            <span className="text-2xl">🍖</span>
-          </div>
+          <img
+          src="/logo.png"
+alt="Logo The Tavern"
+className="h-10 w-auto object-contain"
+/>
           <div>
             <h1 className="text-2xl font-black tracking-tighter text-white">THE TAVERN</h1>
-            <p className="text-[10px] text-orange-500 -mt-1 tracking-[3px]">EST. 2018</p>
+            <p className="text-[10px] text-orange-500 -mt-1 tracking-[3px]">EST. 2026</p>
           </div>
         </div>
 
