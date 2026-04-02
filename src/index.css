@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --color-red: #e11d48;
+  --color-orange: #f97316;
+  --color-yellow: #fbbf24;
+  --color-dark: #0a0a0a;
+  --color-dark2: #171717;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 900;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Card hover effects */
+.menu-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-card:hover {
+  transform: translateY(-8px) scale(1.01);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+/* Tab styles */
+.tab-active {
+  border-bottom: 3px solid #e11d48;
+  color: #e11d48;
+}
+
+/* Cart animation */
+.cart-slide {
+  animation: slideIn 0.4s cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Floating WhatsApp pulse */
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+}
