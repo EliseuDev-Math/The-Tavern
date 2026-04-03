@@ -24,35 +24,34 @@ interface CartItem extends MenuItem {
 }
 
 const MENU_ITEMS: MenuItem[] = [
-  // Espetinhos simples
-  { id: 1, name: 'Carne', category: 'Espetinhos', description: 'Espetinho simples de carne.', price: 6.00, image_url: 'https://lh3.googleusercontent.com/pw/AP1GczO364Oj2T_hJremwOXdNmhFpNRGZS_4vl_FIvimtNyd95hn1k0VTTJNhEHiAKwFvRGzAVfdWq4Fu4jXK8Qq3g81kqcSrybt1SRvm3asYXyicUUCzhg2NgnL5G95o2-La3sVWLk2h6Gs9MLEuzxT_D9nwA=w538-h913-s-no-gm?authuser=0' },
-  { id: 2, name: 'Meio a Meio (Carne + Asa)', category: 'Espetinhos', description: 'Espetinho misto de carne e asa.', price: 10.00, image_url: '' },
-  { id: 3, name: 'Coração de Galinha', category: 'Espetinhos', description: 'Espetinho de coração.', price: 5.00, image_url: '' },
-  { id: 4, name: 'Linguiça', category: 'Espetinhos', description: 'Espetinho de linguiça.', price: 8.00, image_url: '' },
-  { id: 5, name: 'Miolo de Acém', category: 'Espetinhos', description: 'Espetinho de miolo de acém.', price: 9.00, image_url: '' },
-  { id: 6, name: 'Cupim com Abacaxi', category: 'Espetinhos', description: 'Espetinho de cupim com abacaxi.', price: 6.00, image_url: '' },
-  { id: 7, name: 'Bife ao Vazio com Bacon', category: 'Espetinhos', description: 'Espetinho de bife ao vazio com bacon.', price: 10.00, image_url: '' },
-  { id: 8, name: 'Filé de Frango', category: 'Espetinhos', description: 'Espetinho de frango.', price: 8.00, image_url: '' },
+  // Espetinhos
+  { id: 1, name: 'Carne', category: 'Espetinhos', description: '', price: 6.00, image_url: 'https://shoppingdostemperos.com.br/wp-content/uploads/2018/10/Espetinho-De-Carne-Como-Fazer.png' },
+  { id: 2, name: 'Meio da Asa', category: 'Espetinhos', description: '', price: 10.00, image_url: 'https://i.pinimg.com/736x/fe/ec/3c/feec3c24268128ed5f79d6a4b8e17a2c.jpg' },
+  { id: 3, name: 'Frango', category: 'Espetinhos', description: '', price: 10.00, image_url: 'https://www.vivaespetos.com.br/wp-content/uploads/2019/05/frango.jpg' },
+  { id: 4, name: 'Coração de Galinha', category: 'Espetinhos', description: '', price: 3.00, image_url: 'https://nutrifrango.com.br/wp-content/uploads/2020/09/17.jpg' },
+  { id: 5, name: 'Linguiça', category: 'Espetinhos', description: '', price: 8.00, image_url: 'https://receitason.com/wp-content/uploads/2023/04/espetinho-linguica-de-porco.jpg' },
+  { id: 6, name: 'Miolo de Acém', category: 'Espetinhos', description: '', price: 9.00, image_url: 'https://i.ytimg.com/vi/dMYCUnNuNW8/maxresdefault.jpg' },
+  { id: 7, name: 'Miolo de Paleta', category: 'Espetinhos', description: '', price: 10.00, image_url: 'https://i.ytimg.com/vi/dMYCUnNuNW8/maxresdefault.jpg' },
+  { id: 8, name: 'Bife ao Vazio com Bacon', category: 'Espetinhos', description: '', price: 10.00, image_url: 'https://swiftbr.vteximg.com.br/arquivos/617761-espetinho-bovino-com-bacon_3.jpg' },
+  { id: 9, name: 'Filé de Frango', category: 'Espetinhos', description: '', price: 8.00, image_url: 'https://i.panelinha.com.br/i1/bk-2731-espetinho.webp' },
 
-  // Prato feito
-  { id: 9, name: 'Prato Feito Completo', category: 'Pratos', description: 'Arroz, salada e mandioca.', price: 20.00, image_url: '' },
+  // Prato
+  { id: 10, name: 'Prato Feito', category: 'Pratos', description: 'Arroz, salada e mandioca.', price: 20.00, image_url: 'https://media-cdn.tripadvisor.com/media/photo-s/11/36/c4/75/espetos-com-acompanhamento.jpg' },
 
-  // Hambúrguer
-  { id: 10, name: 'Hambúrguer', category: 'Lanches', description: 'Pão, hambúrguer, queijo, alface, tomate, maionese, ketchup, ovo (opcional), bacon e presunto.', price: 22.00, image_url: '' },
-
-  // Cachorro-quente
-  { id: 11, name: 'Cachorro-Quente', category: 'Lanches', description: 'Salsicha, molho de tomate, milho verde, batata palha, queijo ralado, maionese, ketchup, mostarda e ovo.', price: 12.00, image_url: '' },
+  // Lanches
+  { id: 11, name: 'Hambúrguer', category: 'Lanches', description: 'Completo conforme cardápio.', price: 22.00, image_url: 'https://assets.unileversolutions.com/recipes-v2/230453.jpg' },
+  { id: 12, name: 'Cachorro-Quente', category: 'Lanches', description: 'Completo conforme cardápio.', price: 12.00, image_url: 'https://www.sabornamesa.com.br/media/k2/items/cache/d91d2793afc1e2281971343ae9f4138f_L.jpg' },
 
   // Bebidas
-  { id: 12, name: 'Refrigerante Lata', category: 'Bebidas', description: 'Lata 350ml.', price: 6.00, image_url: '' },
-  { id: 13, name: 'Cerveja (Havana Skol)', category: 'Bebidas', description: 'Garrafa.', price: 4.50, image_url: '' },
-  { id: 14, name: 'Água com Gás', category: 'Bebidas', description: 'Garrafa.', price: 4.50, image_url: '' },
-  { id: 15, name: 'Água sem Gás', category: 'Bebidas', description: 'Garrafa.', price: 3.00, image_url: '' },
-  { id: 16, name: 'Coca-Cola 350ml', category: 'Bebidas', description: 'Lata.', price: 3.50, image_url: '' },
-  { id: 17, name: 'Coca-Cola 310ml', category: 'Bebidas', description: 'Garrafa.', price: 5.50, image_url: '' },
-  { id: 18, name: 'Coca-Cola 2L', category: 'Bebidas', description: 'Garrafa.', price: 15.00, image_url: '' },
-  { id: 19, name: 'Kituaba Lata 265ml', category: 'Bebidas', description: 'Lata.', price: 4.50, image_url: '' },
-  { id: 20, name: 'Kituaba Refil 2L', category: 'Bebidas', description: 'Garrafa.', price: 10.00, image_url: '' },
+  { id: 13, name: 'Soda', category: 'Bebidas', description: '', price: 6.00, image_url: '' },
+  { id: 14, name: 'Cerveja', category: 'Bebidas', description: 'Havana/Skol.', price: 4.50, image_url: '' },
+  { id: 15, name: 'Água com Gás', category: 'Bebidas', description: '', price: 4.50, image_url: '' },
+  { id: 16, name: 'Água sem Gás', category: 'Bebidas', description: '', price: 3.00, image_url: '' },
+  { id: 17, name: 'Coca-Cola 350ml', category: 'Bebidas', description: 'Lata.', price: 3.50, image_url: '' },
+  { id: 18, name: 'Coca-Cola 310ml', category: 'Bebidas', description: 'Lata.', price: 5.50, image_url: '' },
+  { id: 19, name: 'Coca-Cola 2L', category: 'Bebidas', description: '', price: 15.00, image_url: '' },
+  { id: 20, name: 'Kitubaína 265ml', category: 'Bebidas', description: 'Lata.', price: 4.50, image_url: '' },
+  { id: 21, name: 'Kitubaína 2L', category: 'Bebidas', description: 'Refil.', price: 10.00, image_url: '' },
 ]
 
 function App() {
