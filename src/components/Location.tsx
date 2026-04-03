@@ -44,7 +44,7 @@ const Location = () => {
                   </div>
                   <div>
                     <div className="font-semibold mb-1">Contato</div>
-                    <a href="https://wa.me/5565999999999" className="text-lg font-medium text-green-400 hover:underline">(65) 99999-9999</a>
+                    <a href="https://wa.me/556593305305" className="text-lg font-medium text-green-400 hover:underline">(65) 99999-9999</a>
                     <div className="text-white/50 text-sm mt-1">Peça pelo WhatsApp</div>
                   </div>
                 </div>
@@ -59,7 +59,7 @@ const Location = () => {
           {/* Map */}
           <div className="relative rounded-3xl overflow-hidden border border-white/10 h-[520px] lg:h-auto">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.773!2d-56.096!3d-15.599!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDM1JzU2LjQiUyA1NsKwMDUnNDUuNiJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+              src="https://www.google.com/maps/place/15%C2%B039'40.3%22S+56%C2%B001'41.5%22W/@-15.6612053,-56.0307749,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-15.6612053!4d-56.0282?hl=pt-BR&entry=ttu&g_ep=EgoyMDI2MDMzMS4wIKXMDSoASAFQAw%3D%3D"
               className="absolute inset-0 w-full h-full"
               allowFullScreen
               loading="lazy"
