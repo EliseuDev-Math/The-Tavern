@@ -79,7 +79,7 @@ className="h-10 w-auto object-contain"
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/5565999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
+            href="https://wa.me/556593305305?text=Olá!%20Vim pelo website%20.%20Gostaria%20de%20fazer%20um%20pedido."
             target="_blank"
             className="hidden md:flex items-center gap-2 px-6 py-2.5 bg-green-500 hover:bg-green-600 text-white text-sm font-semibold rounded-full transition-all"
           >
@@ -110,7 +110,7 @@ className="h-10 w-auto object-contain"
               </button>
             ))}
             <a
-              href="https://wa.me/5565999999999?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
+              href="https://wa.me/556593305305?text=Olá!%20Gostaria%20de%20fazer%20um%20pedido."
               target="_blank"
               className="flex items-center justify-center gap-2 py-3 bg-green-500 hover:bg-green-600 rounded-full font-semibold mt-4"
             >
