@@ -112,7 +112,6 @@ function App() {
       <Menu items={menuItems} loading={loading} onAddToCart={addToCart} />
       <About />
       <Location />
-      <Contact />
       <Footer />
       <WhatsappButton />
       <AnimatePresence>
