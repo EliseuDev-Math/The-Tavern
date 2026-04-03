@@ -10,12 +10,12 @@ const Footer = () => {
             <h3 className="text-3xl font-black tracking-tight">THE TAVERN</h3>
           </div>
           <p className="text-white/70 max-w-sm">
-            O point do churrasco em Cuiabá. Espetinhos, lanches e muito sabor desde 2018.
+            O point do churrasco em Cuiabá. Espetinhos, lanches e muito sabor desde 2026.
           </p>
           
           <div className="flex gap-4 mt-8">
-            <a href="https://instagram.com" target="_blank" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">📷</a>
-            <a href="https://wa.me/5565999999999" target="_blank" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">💬</a>
+            
+            <a href="https://wa.me/556593305305" target="_blank" className="w-11 h-11 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-all">💬</a>
           </div>
         </div>
 
