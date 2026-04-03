@@ -25,7 +25,7 @@ interface CartItem extends MenuItem {
 
 const MENU_ITEMS: MenuItem[] = [
   // Espetinhos simples
-  { id: 1, name: 'Carne', category: 'Espetinhos', description: 'Espetinho simples de carne.', price: 6.00, image_url: '' },
+  { id: 1, name: 'Carne', category: 'Espetinhos', description: 'Espetinho simples de carne.', price: 6.00, image_url: 'https://lh3.googleusercontent.com/pw/AP1GczO364Oj2T_hJremwOXdNmhFpNRGZS_4vl_FIvimtNyd95hn1k0VTTJNhEHiAKwFvRGzAVfdWq4Fu4jXK8Qq3g81kqcSrybt1SRvm3asYXyicUUCzhg2NgnL5G95o2-La3sVWLk2h6Gs9MLEuzxT_D9nwA=w538-h913-s-no-gm?authuser=0' },
   { id: 2, name: 'Meio a Meio (Carne + Asa)', category: 'Espetinhos', description: 'Espetinho misto de carne e asa.', price: 10.00, image_url: '' },
   { id: 3, name: 'Coração de Galinha', category: 'Espetinhos', description: 'Espetinho de coração.', price: 5.00, image_url: '' },
   { id: 4, name: 'Linguiça', category: 'Espetinhos', description: 'Espetinho de linguiça.', price: 8.00, image_url: '' },
