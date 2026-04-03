@@ -24,16 +24,35 @@ interface CartItem extends MenuItem {
 }
 
 const MENU_ITEMS: MenuItem[] = [
-  { id: 1,  name: 'Espetinho de Frango',    category: 'Espetinhos', description: 'Frango marinado na hora, grelhado na brasa com tempero especial da casa.',        price: 12.00, image_url: '' },
-  { id: 2,  name: 'Espetinho Misto',        category: 'Espetinhos', description: 'Combinação de frango e carne bovina, suculentos e temperados com ervas frescas.', price: 14.00, image_url: '' },
-  { id: 3,  name: 'Espetinho de Coração',   category: 'Espetinhos', description: 'Coração de frango no capricho, grelhado à perfeição com alho e limão.',           price: 10.00, image_url: '' },
-  { id: 4,  name: 'Hot Dog Artesanal',      category: 'Lanches',    description: 'Salsicha grossa no pão brioche, molho especial, queijo cheddar e cebola crispy.', price: 18.00, image_url: '' },
-  { id: 5,  name: 'Sanduíche da Casa',      category: 'Lanches',    description: 'Pão artesanal, frango desfiado, maionese defumada, tomate e alface crocante.',   price: 20.00, image_url: '' },
-  { id: 6,  name: 'Crêpe Doce',            category: 'Crêpes',     description: 'Crêpe fininho com Nutella, morango fresco e chantilly. Irresistível.',            price: 16.00, image_url: '' },
-  { id: 7,  name: 'Crêpe Salgado',         category: 'Crêpes',     description: 'Crêpe recheado com frango, catupiry e milho. Feito na hora.',                    price: 18.00, image_url: '' },
-  { id: 8,  name: 'Combo Especial Sábado', category: 'Especial',   description: 'Espetinho misto + bebida + crêpe doce. Disponível apenas aos sábados.',          price: 38.00, image_url: '' },
-  { id: 9,  name: 'Refrigerante',          category: 'Bebidas',    description: 'Lata 350ml. Coca-Cola, Sprite, Fanta Laranja ou Guaraná.',                       price:  6.00, image_url: '' },
-  { id: 10, name: 'Suco Natural',          category: 'Bebidas',    description: 'Suco de laranja, limão ou maracujá. Feito na hora, sem açúcar adicionado.',      price: 10.00, image_url: '' },
+  // Espetinhos simples
+  { id: 1, name: 'Carne', category: 'Espetinhos', description: 'Espetinho simples de carne.', price: 6.00, image_url: '' },
+  { id: 2, name: 'Meio a Meio (Carne + Asa)', category: 'Espetinhos', description: 'Espetinho misto de carne e asa.', price: 10.00, image_url: '' },
+  { id: 3, name: 'Coração de Galinha', category: 'Espetinhos', description: 'Espetinho de coração.', price: 5.00, image_url: '' },
+  { id: 4, name: 'Linguiça', category: 'Espetinhos', description: 'Espetinho de linguiça.', price: 8.00, image_url: '' },
+  { id: 5, name: 'Miolo de Acém', category: 'Espetinhos', description: 'Espetinho de miolo de acém.', price: 9.00, image_url: '' },
+  { id: 6, name: 'Cupim com Abacaxi', category: 'Espetinhos', description: 'Espetinho de cupim com abacaxi.', price: 6.00, image_url: '' },
+  { id: 7, name: 'Bife ao Vazio com Bacon', category: 'Espetinhos', description: 'Espetinho de bife ao vazio com bacon.', price: 10.00, image_url: '' },
+  { id: 8, name: 'Filé de Frango', category: 'Espetinhos', description: 'Espetinho de frango.', price: 8.00, image_url: '' },
+
+  // Prato feito
+  { id: 9, name: 'Prato Feito Completo', category: 'Pratos', description: 'Arroz, salada e mandioca.', price: 20.00, image_url: '' },
+
+  // Hambúrguer
+  { id: 10, name: 'Hambúrguer', category: 'Lanches', description: 'Pão, hambúrguer, queijo, alface, tomate, maionese, ketchup, ovo (opcional), bacon e presunto.', price: 22.00, image_url: '' },
+
+  // Cachorro-quente
+  { id: 11, name: 'Cachorro-Quente', category: 'Lanches', description: 'Salsicha, molho de tomate, milho verde, batata palha, queijo ralado, maionese, ketchup, mostarda e ovo.', price: 12.00, image_url: '' },
+
+  // Bebidas
+  { id: 12, name: 'Refrigerante Lata', category: 'Bebidas', description: 'Lata 350ml.', price: 6.00, image_url: '' },
+  { id: 13, name: 'Cerveja (Havana Skol)', category: 'Bebidas', description: 'Garrafa.', price: 4.50, image_url: '' },
+  { id: 14, name: 'Água com Gás', category: 'Bebidas', description: 'Garrafa.', price: 4.50, image_url: '' },
+  { id: 15, name: 'Água sem Gás', category: 'Bebidas', description: 'Garrafa.', price: 3.00, image_url: '' },
+  { id: 16, name: 'Coca-Cola 350ml', category: 'Bebidas', description: 'Lata.', price: 3.50, image_url: '' },
+  { id: 17, name: 'Coca-Cola 310ml', category: 'Bebidas', description: 'Garrafa.', price: 5.50, image_url: '' },
+  { id: 18, name: 'Coca-Cola 2L', category: 'Bebidas', description: 'Garrafa.', price: 15.00, image_url: '' },
+  { id: 19, name: 'Kituaba Lata 265ml', category: 'Bebidas', description: 'Lata.', price: 4.50, image_url: '' },
+  { id: 20, name: 'Kituaba Refil 2L', category: 'Bebidas', description: 'Garrafa.', price: 10.00, image_url: '' },
 ]
 
 function App() {
