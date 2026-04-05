@@ -61,7 +61,7 @@ const Hero = () => {
           </motion.button>
           
           <motion.a
-            href="https://wa.me/5565999999999?text=Olá!%20Quero%20pedir%20um%20espetinho!"
+            href="https://wa.me/556593305305?text=Olá!%20Quero%20pedir%20um%20espetinho!"
             target="_blank"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.98 }}
