@@ -9,7 +9,7 @@ const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     const text = `Olá! Meu nome é ${formData.name}.\n\n${formData.message}\n\nContato: ${formData.phone || formData.email}`
-    window.open(`https://wa.me/5565999999999?text=${encodeURIComponent(text)}`, '_blank')
+    window.open(`https://wa.me/556593305305"?text=${encodeURIComponent(text)}`, '_blank')
     setSubmitStatus('success')
     setFormData({ name: '', email: '', phone: '', message: '' })
     setTimeout(() => setSubmitStatus('idle'), 3000)
@@ -24,7 +24,7 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto px-6">
         <div className="text-center mb-12">
           <div className="text-red-500 text-sm font-medium tracking-[3px] mb-3">FALE CONOSCO</div>
-          <h2 className="text-6xl font-black tracking-tighter">RESERVE SUA MESA</h2>
+          <h2 className="text-6xl font-black tracking-tighter">Dê seu Feedback</h2>
           <p className="mt-4 text-xl text-white/70">Queremos ouvir você. Deixe uma mensagem!</p>
         </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
               <label className="block text-sm font-medium mb-2 text-white/70">Telefone / WhatsApp</label>
               <input type="tel" name="phone" value={formData.phone} onChange={handleChange}
                 className="w-full bg-black border border-white/20 rounded-2xl px-5 py-4 text-white placeholder:text-white/40 focus:outline-none focus:border-red-500"
-                placeholder="(65) 99999-9999" />
+                placeholder="(65) 99999999"" />
             </div>
           </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
         </motion.form>
 
         <div className="text-center mt-8 text-sm text-white/50">
-          Ou ligue direto: <a href="https://wa.me/5565999999999" className="text-red-400 underline">(65) 99999-9999</a>
+          Ou ligue direto: <a href="https://wa.me/556593305305" className="text-red-400 underline">(65) 93305305</a>
         </div>
       </div>
     </section>
