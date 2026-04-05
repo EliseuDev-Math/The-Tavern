@@ -102,7 +102,7 @@ function App() {
       `${item.quantity}x ${item.name} - R$ ${(item.price * item.quantity).toFixed(2)}`
     ).join('\n')
     const message = `Olá! Gostaria de fazer o pedido:\n\n${orderText}\n\nTotal: R$ ${cartTotal.toFixed(2)}\n\nEndereço de entrega: `
-    window.open(`https://wa.me/5565999999999?text=${encodeURIComponent(message)}`, '_blank')
+    window.open(`https://wa.me/56593305305"?text=${encodeURIComponent(message)}`, '_blank')
   }
 
   return (
